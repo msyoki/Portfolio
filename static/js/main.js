@@ -16,3 +16,28 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+    //what we do text toggle
+    $(".design").click(function() {
+        $(".shown-design").fadeToggle();
+        $(".hidden-design").fadeinToggle();
+      });
+  
+      $(".development").click(function() {
+          $(".shown-development").fadeToggle();
+          $(".hidden-development").fadeinToggle();
+      });
+  
+      $(".management").click(function() {
+          $(".shown-management").fadeToggle();
+          $(".hidden-management").fadeinToggle();
+      }); 
+
+
+    //portfolio text toggle 
+    $('.card').hover(function(){
+        $('.toggle-text',this).slideToggle('slow');
+     }, function(){
+        $('.toggle-text',this).fadeToggle('slow');
+    });
